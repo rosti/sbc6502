@@ -28,5 +28,5 @@
     (doseq [file args]
       (load-path mem-map file))
     (try
-      (run-continious (new-cpu-state mem-map))
+      (run-continuous (new-cpu-state mem-map))
       (catch RuntimeException e (println (.getMessage e))))))
