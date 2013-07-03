@@ -19,7 +19,6 @@
 
 (defn -main
   [& args]
-  ;; work around dangerous default behaviour in Clojure
   (let [mem-map (-> (empty-memory-map)
                     (bss-area 0x0000 0xF000)
                     (bss-area 0xF100 0x0F00)
