@@ -19,6 +19,9 @@
 
 (defn -main
   [& args]
+  (when (empty? args)
+    (println "Please, specify atleast one hex file.")
+    (System/exit 1))
   (let [mem-map (-> (empty-memory-map)
                     (bss-area 0x0000 0xF000)
                     (bss-area 0xF100 0x0F00)
