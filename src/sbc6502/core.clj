@@ -20,7 +20,7 @@
 (defn -main
   [& args]
   (when (empty? args)
-    (println "Please, specify atleast one hex file.")
+    (println "Please, specify at least one hex file.")
     (System/exit 1))
   (let [mem-map (-> (empty-memory-map)
                     (bss-area 0x0000 0xF000)
