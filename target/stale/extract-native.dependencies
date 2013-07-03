@@ -1,0 +1,1 @@
+([:dependencies ([org.clojure/clojure "1.5.1"] [emu6502/emu6502 "0.1.0-SNAPSHOT"])])
